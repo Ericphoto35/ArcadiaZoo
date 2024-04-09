@@ -1,0 +1,100 @@
+<div class="hero-scene text-center text-white">
+    <div class="hero-scene-content">
+
+        <h1>Les services</h1>
+        <p>Ce que vous pouvez faire au ZOO Arcadia</p>
+
+    </div>
+</div>
+<div class="container p-4" data-show="connected">
+    <div data-show="connected" class="text-center p-4">
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+            data-bs-target="#modalAjoutService">
+            Ajouter un service
+        </button>
+    </div>
+</div>
+<div class="container p-4">
+    <h2 class="text-center text-primary p-4">Visite du ZOO avec GUIDE</h2>
+    <div class="row row-cols-1 row-cols-lg-2 align-items-center">
+        <div class="col">
+            <p class="text-justify">
+                Vous pouvez venir visiter tranquillement le Zoo à votre rythme, mais ARCADIA vous propose un service
+                exclusif
+                . Une visite avec un guide spécialiste des animaux GRATUITEMENT.
+            </p>
+        </div>
+        <div class="col">
+            <img class="w-100 rounded" src="/images/africa-1603382_1280.jpg" alt="food">
+        </div>
+    </div>
+</div>
+<article class="bg-dark text-white">
+    <div class="services container p-4 bg-dark">
+        <h2 class="text-center text-primary p-4">Visite du ZOO en petit TRAIN</h2>
+        <div class="row row-cols-1 row-cols-lg-2 align-items-center">
+            <div class="col">
+                <img class="w-100 rounded" src="/images/Plan de travail 5.png" alt="food">
+            </div>
+            <div class="col">
+                <p class="text-justify">
+                    Vous pouvez venir aussi visiter le Zoo tout en profitant du paysage BRETON en petit TRAIN,
+                    Tour du ZOO d'une durée d'environ 2h avec HALTE à chaque HABITAT
+                    <br>Tarif: 20 euros par Adulte
+                    <br>Gratuit pour les enfants
+                </p>
+                <div data-show="connected " class="text-center p-4">
+                    <a href="#" class="btn btn-secondary">Modifier</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+<div class="container p-4">
+    <h2 class="text-center text-primary p-4">Restaurant Arcadia</h2>
+    <div class="row row-cols-1 row-cols-lg-2 align-items-center">
+        <div class="col">
+            <p class="text-justify">
+                Après une matinée bien remplie au ZOO ARCADIA. On propose un service de restaurant en plein milieu du
+                parc
+                avec vue sur les 3 habitats.<br>
+                Venez goûter au fameux menu de notre CHEF qui fera decouvrir la cuisine Bretonne.
+            </p>
+            <div data-show="connected" class="text-center p-4">
+                <a href="#" class="btn btn-secondary">Modifier</a>
+            </div>
+        </div>
+        <div>
+            <img class="w-100 rounded" src="/images/Plan de travail 4.png" alt="food">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modalAjoutService" tabindex="-1" aria-labelledby="modalAjoutServiceLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalAjoutServiceLabel">Ajouter un service</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="#">
+                    <div class="mb-3">
+                        <label for="inputTitre" class="form-label">Titre du service</label>
+                        <input type="text" class="form-control" id="inputTitre" name="titre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputTexte" class="form-label">Description du service</label>
+                        <textarea class="form-control" id="inputTexte" name="texte" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputImage" class="form-label">Image du service</label>
+                        <input type="file" class="form-control" id="inputImage" name="image">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Ajouter</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
